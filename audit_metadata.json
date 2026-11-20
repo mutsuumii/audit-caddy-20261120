@@ -1,0 +1,28 @@
+{
+  "source_repo": "caddyserver/caddy",
+  "source_url": "https://github.com/caddyserver/caddy",
+  "audit_date": "2026-11-20T09:52:37.756229",
+  "scanner_version": "1.3.0",
+  "findings_count": 2,
+  "severity_breakdown": {
+    "HIGH": 2
+  },
+  "findings": [
+    {
+      "id": "JS-XSS-001",
+      "name": "DOM XSS via innerHTML",
+      "severity": "HIGH",
+      "cwe": "CWE-79",
+      "file": "modules/caddyhttp/encode/testdata/caddy_asciinema_player.js",
+      "line": 1
+    },
+    {
+      "id": "JS-PROTO-001",
+      "name": "Prototype pollution",
+      "severity": "HIGH",
+      "cwe": "CWE-1321",
+      "file": "modules/caddyhttp/encode/testdata/caddy_asciinema_player.js",
+      "line": 1
+    }
+  ]
+}
